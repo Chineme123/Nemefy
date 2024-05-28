@@ -3,7 +3,7 @@ import { FaShopify } from "react-icons/fa";
 import { TbWorld } from "react-icons/tb";
 import { IoMdArrowDropup } from "react-icons/io";
 import { IoMdArrowDropdown } from "react-icons/io";
-import { FaFacebookF, FaXTwitter, FaInstagram, FaYoutube  } from "react-icons/fa";
+import { FaFacebookF, FaXTwitter, FaInstagram, FaYoutube  } from "react-icons/fa6";
 import { IoLogoTiktok } from "react-icons/io5";
 import { FaLinkedinIn, FaPinterest } from "react-icons/fa";
 import './Footer.css'
@@ -63,6 +63,7 @@ function Footer() {
           <TbWorld />
           <span>Nigeria</span>
           <IoMdArrowDropdown />
+          <IoMdArrowDropup style={{display: "none"}}/>
         </div>
         <div className='legal'>
           <span><a href="#">Terms of Service</a></span>
@@ -72,13 +73,12 @@ function Footer() {
         </div>
         <div className='socials'>
           <span><FaFacebookF style={style} /></span>
-          <span><FaFacebookF style={style} /></span>
-          <span><FaFacebookF style={style} /></span>
-          <span><FaFacebookF style={style} /></span>
-          <span><FaFacebookF style={style} /></span>
-          <span><FaFacebookF style={style} /></span>
-          <span><FaFacebookF style={style} /></span>
-          <span><FaFacebookF style={style} /></span>
+          <span><FaInstagram style={style} /></span>
+          <span><FaXTwitter style={style} /></span>
+          <span><FaLinkedinIn style={style} /></span>
+          <span><FaPinterest style={style} /></span>
+          <span><FaYoutube style={style} /></span>
+          <span><IoLogoTiktok style={style} /></span>
         </div>
       </div>
     </div>

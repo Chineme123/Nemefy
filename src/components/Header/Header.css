@@ -1,0 +1,78 @@
+.header{
+    /* border: 1px solid; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    position: sticky;
+    top: 0;
+    color: white;
+    background: black;
+    width: 100%;
+}
+
+.header div{    
+    /* border: 1px solid; */
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.header-logo h1{
+    margin-left: 0.5rem;
+}
+
+.header-links{
+    width: 40%;
+    justify-content: space-around;
+}
+
+.start{
+    justify-content: space-around;
+    width: 20%;
+}
+
+.start a{
+    color: white;
+}
+
+.start a:nth-child(2){
+    border: 1px solid;
+    padding: 1rem 1.3rem;
+    border-radius: 50px;
+    background: white;
+    color: black;
+}
+
+.header-links span{
+    /* border: 1px solid; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*menu*/
+.solutionMenu{
+    position: fixed;
+    width: 100%;
+    color: white;
+    background: black;
+    padding: 1rem;
+}
+
+.solutionMenu-divone{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0.5rem;
+}
+
+.menulist .title{
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid;
+}
+
+.menulist{
+    padding: 0.5rem 1.5rem;
+}
+
