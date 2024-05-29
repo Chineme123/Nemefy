@@ -58,7 +58,6 @@
     width: 100%;
     color: white;
     background: black;
-    padding: 1rem;
     z-index: 2;
 }
 
@@ -69,12 +68,77 @@
     padding: 0.5rem;
 }
 
+.solutionMenu-divtwo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 2rem 4.5rem;
+    background-color: rgba(30, 30, 30, 1);
+}
+
+.solutionMenu-divtwo div{
+   border-right: 2px solid;
+   padding: 1rem; 
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+}
+
+.solutionMenu-divtwo div span:first-child{
+    margin-bottom: 0.5rem;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.solutionMenu-divtwo div span:nth-child(2){
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(200, 200, 200, 1);
+}
+
 .menulist .title{
     margin-bottom: 0.5rem;
     border-bottom: 1px solid;
+    padding: 0.5rem;
+}
+
+.menulist .title h5{
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+}
+
+.menulist .title span{
+    display: flex;
+    border: 1px solid;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
 }
 
 .menulist{
+    /* border: 1px solid; */
+    width: 20%;
     padding: 0.5rem 1.5rem;
+}
+
+.title-list a{
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.title-list span{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.title-list:hover span{
+   
 }
 

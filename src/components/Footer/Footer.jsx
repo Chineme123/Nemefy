@@ -15,7 +15,7 @@ function Footer() {
     <div className='footer'>
       <div className='upper'>
         <div className='logo'>
-          <FaShopify />
+          <FaShopify style={{fontSize: "6rem"}}/>
         </div>
         <div className='links'>
           <div>

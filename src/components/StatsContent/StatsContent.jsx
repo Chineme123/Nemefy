@@ -33,32 +33,32 @@ function StatsContent() {
             <p>EXPLORE THE WORLD'S LARGEST COMMERCE COMMUNITY</p>
             <div className='community-block'>
                 <CommuinityCard 
-                    icon={<IoIosInfinite style={{color: "rgb(255, 0, 0)", fontSize: "1rem", fontWeight: 900}} />}
+                    icon={<IoIosInfinite style={{color: "rgb(255, 0, 0)", fontSize: "1rem" }} />}
                     title={"Plus"}
                     content={"A commerce Solution for growing digital brands"}
-                    color1={{background: "rgba(255, 0, 0, 0.5)"}}
-                    color2={{background: "rgba(255, 0, 0, 0.25)"}}
+                    color1={{background: "rgba(255, 0, 0, 0.3)"}}
+                    color2={{background: "rgba(255, 0, 0, 0.15)"}}
                 />
                 <CommuinityCard 
-                    icon={<GrGroup style={{color: "rgb(0, 0, 255)"}}/>}
+                    icon={<GrGroup style={{color: "rgb(0, 0, 255)", fontSize: "1rem"}}/>}
                     title={"Partners"}
                     content={"Offer your expertise to shopify merchants all over the world"}
-                    color1={{background: "rgba(0, 0, 255, 0.5)"}}
-                    color2={{background: "rgba(0, 0, 255, 0.3)"}}
+                    color1={{background: "rgba(0, 0, 255, 0.3)"}}
+                    color2={{background: "rgba(0, 0, 255, 0.15)"}}
                 />
                 <CommuinityCard 
-                    icon={<FaCode style={{color: "rgb(255, 165, 0)"}}/>}
+                    icon={<FaCode style={{color: "rgb(255, 165, 0)", fontSize: "1rem"}}/>}
                     title={"Developers"}
                     content={"Build the future of commerce with Shopify's powerful API"}
-                    color1={{background: "rgba(255, 165, 0, 0.5)"}}
-                    color2={{background: "rgba(255, 165, 0, 0.3)"}}
+                    color1={{background: "rgba(255, 165, 0, 0.3)"}}
+                    color2={{background: "rgba(255, 165, 0, 0.15)"}}
                 />
                 <CommuinityCard 
-                    icon={<CiVideoOn style={{color: "rgb(128, 0, 128)"}}/>}
+                    icon={<CiVideoOn style={{color: "rgb(128, 0, 128)", fontSize: "1rem"}}/>}
                     title={"Creators"}
                     content={"Turn followers into customers with commerce tools for creators"}
-                    color1={{background: "rgba(128, 0, 128, 0.5)"}}
-                    color2={{background: "rgba(128, 0, 128, 0.3)"}}
+                    color1={{background: "rgba(128, 0, 128, 0.3)"}}
+                    color2={{background: "rgba(128, 0, 128, 0.15)"}}
                 />
             </div>
         </div>
