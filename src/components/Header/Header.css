@@ -9,6 +9,7 @@
     color: white;
     background: black;
     width: 100%;
+    z-index: 2;
 }
 
 .header div{    
@@ -37,7 +38,7 @@
 }
 
 .start a:nth-child(2){
-    border: 1px solid;
+    /* border: 1px solid; */
     padding: 1rem 1.3rem;
     border-radius: 50px;
     background: white;
@@ -58,6 +59,7 @@
     color: white;
     background: black;
     padding: 1rem;
+    z-index: 2;
 }
 
 .solutionMenu-divone{
