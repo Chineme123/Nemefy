@@ -1,0 +1,35 @@
+.sale-channel{
+    border: 1px solid;
+    width: 100%;
+    padding: 1.5rem;
+}
+
+.sale-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.sale-header-item{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.sale-header-item1 p{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.sale-header-item1 h1{
+    font-size: 60px;
+    margin-bottom: 2.5rem;
+}
+
+.sale-header-item2 p{
+    width: 70%;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}

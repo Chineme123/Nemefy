@@ -3,6 +3,8 @@ import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import HeroContent from "./components/HeroContent/HeroContent";
 import StatsContent from "./components/StatsContent/StatsContent";
+import BuildStore from "./components/BuildStore/BuildStore";
+import SalesChannel from "./components/SalesChannel/SalesChannel";
 
 function App() {
   return (
@@ -10,6 +12,8 @@ function App() {
       <Header />
       <HeroContent />
       <StatsContent />
+      <BuildStore />
+      <SalesChannel />
       <Footer />
     </div>
   );

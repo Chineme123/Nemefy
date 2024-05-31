@@ -1,0 +1,52 @@
+.action{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    border-bottom: 1.5px solid;
+    padding: 1rem 0;
+    overflow-x: hidden;
+    transition: all 0.35s ease-in-out;
+}
+
+.action:hover{
+    justify-content: space-around;
+}
+
+.act{
+    width: 50%;
+    font-size: 24px;
+}
+
+.icon1{
+    transform: translateX(-5rem);
+}
+
+.action:hover .icon2{
+    animation: slide 0.35s ease-in-out 1 forwards;
+}
+
+.action:hover .icon1{
+    animation: slide1 0.35s ease-in-out 1 forwards;
+}
+
+@keyframes slide {
+    0%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+@keyframes slide1 {
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
