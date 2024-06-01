@@ -1,13 +1,13 @@
 .sale-channel{
-    border: 1px solid;
     width: 100%;
-    padding: 1.5rem;
+    padding: 3rem 1.5rem;
+    margin-top: 4rem;
 }
 
 .sale-header{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .sale-header-item{
@@ -16,20 +16,49 @@
     width: 40%;
 }
 
-.sale-header-item1 p{
+.sale-header-item1 p, .pos-item p:first-child{
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 0.5rem;
 }
 
-.sale-header-item1 h1{
+.sale-header-item1 h1, .pos-item h1{
     font-size: 60px;
     margin-bottom: 2.5rem;
 }
 
-.sale-header-item2 p{
+.sale-header-item2 p, .pos-item p:nth-child(2){
     width: 70%;
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 1rem;
+}
+
+.sales-picture{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.sales-picture img{
+    width: 25%;
+}
+
+.pos{
+    width: 100%;
+    padding: 1rem;
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pos-item{
+    width: 50%;
+}
+
+.pos img{
+    width: 40%;
 }

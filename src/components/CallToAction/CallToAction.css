@@ -10,11 +10,12 @@
 
 .action:hover{
     justify-content: space-around;
+    cursor: pointer;
 }
 
 .act{
-    width: 50%;
-    font-size: 24px;
+    width: 70%;
+    font-size: 20px;
 }
 
 .icon1{

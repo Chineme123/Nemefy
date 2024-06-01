@@ -5,6 +5,7 @@ import HeroContent from "./components/HeroContent/HeroContent";
 import StatsContent from "./components/StatsContent/StatsContent";
 import BuildStore from "./components/BuildStore/BuildStore";
 import SalesChannel from "./components/SalesChannel/SalesChannel";
+import Marketingtools from "./components/Marketingtools/Marketingtools";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <StatsContent />
       <BuildStore />
       <SalesChannel />
+      <Marketingtools />
       <Footer />
     </div>
   );

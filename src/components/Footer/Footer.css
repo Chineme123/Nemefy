@@ -2,13 +2,14 @@
     /* border: 1px solid; */
     width: 100vw;
     height: 100vh;
-    padding: 1rem 4rem;
+    padding: 1rem 5rem;
 }
 
 .upper{
     /* border: 1px solid; */
     display: flex;
     height: 80vh;
+    font-size: 20px;
 }
 
 .lower{
@@ -16,7 +17,8 @@
     height: 10vh;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    border-top: 1px solid;
 }
 
 .logo{
@@ -71,11 +73,16 @@
     align-items: center;
 }
 
+.language span{
+    font-size: 20px;
+}
+
 .legal{
     width: 40%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-size: 20px;
 }
 
 .socials{
@@ -85,6 +92,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 20px;
 }
 
 .socials span{

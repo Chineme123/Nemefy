@@ -60,7 +60,7 @@ function Footer() {
 
       <div className='lower'>
         <div className='language'>
-          <TbWorld />
+          <TbWorld style={{fontSize: "24px"}} />
           <span>Nigeria</span>
           <IoMdArrowDropdown />
           <IoMdArrowDropup style={{display: "none"}}/>
