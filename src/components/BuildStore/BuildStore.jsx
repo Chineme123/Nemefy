@@ -46,7 +46,7 @@ function BuildStore() {
                     Bring your vision to life with our drag-and-drop store creator. 
                     No coding expertise required - just your next big idea.
                 </p>
-                <a href="#" onMouseEnter={handleHover} onMouseLeave={handleMouseout}>
+                <a onMouseEnter={handleHover} onMouseLeave={handleMouseout}>
                     Online Store Builder
                     {visible && <FaArrowRight style={{transition: "all 0.35s linear", marginLeft: "0.5rem"}} />}
                 </a>
@@ -57,7 +57,7 @@ function BuildStore() {
                 <p>
                     Select your customizable templates created by a community of world-class designers.
                 </p>
-                <a href="#" onMouseEnter={handleHover1} onMouseLeave={handleMouseout1}>
+                <a onMouseEnter={handleHover1} onMouseLeave={handleMouseout1}>
                     Theme Store
                     {visible2 && <FaArrowRight style={{transition: "all 0.35s linear", marginLeft: "0.5rem"}} />}
                 </a>
@@ -68,7 +68,7 @@ function BuildStore() {
                 <p>
                     Add more features and functionality to your online store with apps built by trusted Shopify developers.
                 </p>
-                <a href="#" onMouseEnter={handleHover2} onMouseLeave={handleMouseout2}>
+                <a onMouseEnter={handleHover2} onMouseLeave={handleMouseout2}>
                     Shopify App Store
                     {visible3 && <FaArrowRight style={{transition: "all 0.35s linear", marginLeft: "0.5rem"}} />}
                 </a>
