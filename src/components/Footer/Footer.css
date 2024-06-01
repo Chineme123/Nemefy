@@ -55,13 +55,11 @@
 
 .links span{
     margin-bottom: 0.5rem;
-}
-
-.links a{
     color: black;
+    cursor: pointer;
 }
 
-.links a:hover{
+.links span:hover{
     text-decoration: underline;
     transition: all 0.25s linear;
 }
@@ -99,8 +97,8 @@
     /* border: 1px solid; */
     background-color: #000;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;

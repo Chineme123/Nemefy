@@ -20,40 +20,40 @@ function Footer() {
         <div className='links'>
           <div>
             <h3>Shopify</h3>
-            <span><a>About</a></span>
-            <span><a>Career</a></span>
-            <span><a>Investors</a></span>
-            <span><a>Press and Media</a></span>
-            <span><a>Partners</a></span>
-            <span><a>Affiliates</a></span>
-            <span><a>Legal</a></span>
+            <span>About</ span>
+            <span>Career</ span>
+            <span>Investors</ span>
+            <span>Press and Media</ span>
+            <span>Partners</ span>
+            <span>Affiliates</ span>
+            <span>Legal</ span>
           </div>
           <div>
             <h3>Support</h3>
-            <span><a>About</a></span>
-            <span><a>Career</a></span>
-            <span><a>Investors</a></span>
-            <span><a>Press and Media</a></span>
-            <span><a>Partners</a></span>
+            <span>About</ span>
+            <span>Career</ span>
+            <span>Investors</ span>
+            <span>Press and Media</ span>
+            <span>Partners</ span>
           </div>
           <div>
             <h3>Developers</h3>
-            <span><a>About</a></span>
-            <span><a>Career</a></span>
-            <span><a>Investors</a></span>
+            <span>About</ span>
+            <span>Career</ span>
+            <span>Investors</ span>
           </div>
           <div>
             <h3>Products</h3>
-            <span><a>About</a></span>
-            <span><a>Career</a></span>
-            <span><a>Investors</a></span>
-            <span><a>Press and Media</a></span>
+            <span>About</ span>
+            <span>Career</ span>
+            <span>Investors</ span>
+            <span>Press and Media</ span>
           </div>
           <div>
             <h3>Solutions</h3>
-            <span><a>About</a></span>
-            <span><a>Career</a></span>
-            <span><a>Investors</a></span>
+            <span>About</ span>
+            <span>Career</ span>
+            <span>Investors</ span>
           </div>
         </div>
       </div>
@@ -66,10 +66,10 @@ function Footer() {
           <IoMdArrowDropup style={{display: "none"}}/>
         </div>
         <div className='legal'>
-          <span><a>Terms of Service</a></span>
-          <span><a>Privacy Policy</a></span>
-          <span><a>Site Map</a></span>
-          <span><a>Privacy Choices</a></span>
+          <span>Terms of Service</ span>
+          <span>Privacy Policy</ span>
+          <span>Site Map</ span>
+          <span>Privacy Choices</ span>
         </div>
         <div className='socials'>
           <span><FaFacebookF style={style} /></span>

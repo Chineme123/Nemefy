@@ -33,11 +33,11 @@
     width: 20%;
 }
 
-.start a{
+.start span{
     color: white;
 }
 
-.start a:nth-child(2){
+.start span:nth-child(2){
     /* border: 1px solid; */
     padding: 1rem 1.3rem;
     border-radius: 50px;
@@ -125,20 +125,16 @@
     padding: 0.5rem 1.5rem;
 }
 
-.title-list a{
+.title-list span{
     color: white;
     font-size: 24px;
     font-weight: 700;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .title-list span{
     font-size: 18px;
     font-weight: 500;
 }
-
-.title-list:hover span{
-   
-}
-

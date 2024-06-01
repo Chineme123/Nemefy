@@ -46,8 +46,8 @@ function Header() {
                 </span>
             </div>
             <div className='start'>
-                <a>Log in</a>
-                <a>Start free trial</a>
+                <span>Log in</span>
+                <span>Start free trial</span>
             </div>
         </div>
         {solutionDropDown && <SolutionsMenu />}

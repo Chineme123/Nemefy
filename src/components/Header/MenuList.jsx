@@ -27,15 +27,14 @@ function MenuList({icon, title}) {
         <div className='title-list'>
             {list.map((x, index) => (
                 <div key={index} style={{display: "flex", flexDirection: "column", marginTop: "1rem"}}>
-                    <a 
-                        href='' 
+                    <span  
                         style={{marginBottom: "0.5rem"}} 
                         onMouseEnter={() => handleHover(index)} 
                         onMouseLeave={handleMouseout}
                     >
                         {x.title} 
                         {visible === index && <FaArrowRight style={{transition: "all 0.35s linear", marginLeft: "0.5rem"}}/>}
-                    </a> 
+                    </span> 
                     <span style={{color: visible === index ? "white" : "rgba(200, 200, 200, 1)"}}>{x.desc}</span>
                 </div>
             ))}

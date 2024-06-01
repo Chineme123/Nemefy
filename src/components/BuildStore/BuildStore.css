@@ -59,11 +59,12 @@
     font-size: 21px;
 }
 
-.build-action-item a{
+.build-action-item span{
     text-decoration: underline;
     color: #000;
     font-size: 18px;
     font-weight: 600;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }

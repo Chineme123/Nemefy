@@ -14,10 +14,10 @@ function HeroContent() {
         </div>
         <div className='hero-start'>
             <div>
-                <a href="#">Start free trial</a>
+                <span>Start free trial</span>
                 <p>Get 3 days free, then 1 month for 1$</p>
             </div>
-            <a href="#">Watch the Shopify  story</a>
+            <span>Watch the Shopify  story</span>
         </div>
     </div>
   )
