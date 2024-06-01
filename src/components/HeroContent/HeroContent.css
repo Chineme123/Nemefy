@@ -1,7 +1,7 @@
 .herocontent{
     /* border: 1px solid; */
     width: 100%;
-    height: 90vh;
+    height: 70vh;
     position: relative;
     color: #fff;
 }
@@ -23,23 +23,22 @@
 .motto{
     /* border: 1px solid; */
     flex-direction: column;
-    height: 70vh;
     padding: 2rem;
 }
 
 .motto h1, .motto h3{
-    width: 40%;
+    width: 100%;
 }
 .motto h3{
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 30px;
 }
 
 .motto h1{
     margin-bottom: 1rem;
-    margin-top: 30vh;
-    font-size: 65px;
+    margin-top: 5vh;
+    font-size: 50px;
     font-weight: 800;
     line-height: 65px;
 }
@@ -47,35 +46,84 @@
 .hero-start{
     /* border: 1px solid; */
     width: 100%;
-    justify-content: space-between;
     align-items: center;
     padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .hero-start div{
     /* border: 1px solid; */
-    width: 30%;
+    width: 100%;
     display: flex;
+    flex-direction: column;
     padding: 0.5rem;
     align-items: center;
-    justify-content: space-around;
+}
+
+.hero-start span{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 1rem 1.3rem;
+    border-radius: 50px;
 }
 
 .hero-start span:first-child{
     /* border: 1px solid; */
-    padding: 1rem 1.3rem;
-    border-radius: 50px;
     background: white;
     color: black;
-    cursor: pointer;
 }
 
 .hero-start span:nth-child(2){
     border: 1px solid;
-    padding: 1rem 1.3rem;
-    border-radius: 50px;
     background: transparent;
     color: #fff;
-    margin-right: 3rem;
-    cursor: pointer;
 }
+
+@media screen and (min-width: 1024px) {
+    .herocontent{
+        height: 90vh;
+    }
+
+    .motto{
+        height: 70vh;
+    }
+    
+    .hero-start div{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .motto h1{
+        margin-top: 30vh;
+        font-size: 65px;
+    }
+
+    .motto h1, .motto h3{
+        width: 40%;
+    }
+
+    .motto h3{
+        font-size: 24px;
+    }
+
+    .hero-start{
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .hero-start div{
+        width: 30%;
+    }
+
+    .hero-start span:nth-child(2){
+        margin-right: 3rem;
+    }
+}
+
+
+

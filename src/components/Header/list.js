@@ -25,4 +25,6 @@ const list = [
     }
 ]
 
-export default {list}
+const data = {list}
+
+export default data
