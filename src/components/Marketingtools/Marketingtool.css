@@ -1,6 +1,5 @@
 .marketing-tools{
     width: 100%;
-    height: 100vh;
     padding: 3rem 1.5rem;
     margin-top: 4rem;
     background: rgba(230, 230, 230, 0.3);
@@ -8,6 +7,7 @@
 
 .tools-header{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 2rem;
@@ -16,17 +16,17 @@
 .tool-header-item{
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 100%;
 }
 
 .tools-header-item1 p{
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 1.3rem;
+    font-weight: 400;
     margin-bottom: 0.5rem;
 }
 
 .tools-header-item1 h1{
-    font-size: 60px;
+    font-size: 2rem;
     margin-bottom: 2.5rem;
 }
 
@@ -34,11 +34,14 @@
     width: 100%;
     padding: 1rem;
     display: flex;
+    flex-direction: column-reverse;
 }
 
 .tools-items{
     width: 100%;
     padding: 0.5rem;
+    display: flex;
+    overflow-x: auto;
 }
 
 .tools-pic{
@@ -49,5 +52,27 @@
 }
 
 .tools-pic img{
-    width: 80%;
+    width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+    .tools-header{
+        flex-direction: row;
+    }
+
+    .tools{
+        flex-direction: row;
+    }
+
+    .tools-pic img{
+        width: 80%;
+    }
+
+    .tools-items{
+        display: block;
+    }
+
+    .tool-header-item{
+        width: 40%;
+    }
 }

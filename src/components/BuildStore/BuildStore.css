@@ -9,14 +9,14 @@
 }
 
 .build-store-p{
-    font-size: 24px;
+    font-size: 1.2rem;
     color: rgba(40, 67, 135, 0.7);
     font-weight: 700;
     margin-bottom: 0.5rem;
 }
 
 .build-store h1{
-    font-size: 60px;
+    font-size: 2rem;
     margin-bottom: 2.5rem;
 }
 
@@ -29,7 +29,7 @@
 }
 
 .build-store img{
-    width: 80%;
+    width: 100%;
     border-radius: 15px;
 }
 
@@ -38,11 +38,14 @@
     align-items: center;
     justify-content: space-evenly;
     margin-top: 1rem;
+    overflow-x: auto;
 }
 
 .build-action-item{
-    width: 25%;
+    width: 350px;
+    min-width: 350px;
     padding: 0.5rem;
+    margin-right: 1.5rem;
 }
 
 .build-action-item p, .build-action-item h3{
@@ -67,4 +70,15 @@
     display: flex;
     align-items: center;
     cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
+    .build-action-item{
+        margin-right: 0;
+    }
+
+    .build-store img{
+        width: 80%;
+        border-radius: 15px;
+    }
 }

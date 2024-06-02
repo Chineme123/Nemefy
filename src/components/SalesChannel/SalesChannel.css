@@ -6,6 +6,7 @@
 
 .sale-header{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
@@ -13,22 +14,22 @@
 .sale-header-item{
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 100%;
 }
 
 .sale-header-item1 p, .pos-item p:first-child{
-    font-size: 24px;
+    font-size: 1.3rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
 }
 
 .sale-header-item1 h1, .pos-item h1{
-    font-size: 60px;
+    font-size: 2rem;
     margin-bottom: 2.5rem;
 }
 
 .sale-header-item2 p, .pos-item p:nth-child(2){
-    width: 70%;
+    width: 100%;
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 1rem;
@@ -40,10 +41,13 @@
     align-items: center;
     justify-content: space-around;
     margin-top: 2rem;
+    overflow-x: auto;
 }
 
 .sales-picture img{
-    width: 25%;
+    width: 300px;
+    min-width: 300px;
+    margin-right: 2rem;
 }
 
 .pos{
@@ -51,14 +55,42 @@
     padding: 1rem;
     margin-top: 4rem;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
 
 .pos-item{
-    width: 50%;
+    width: 100%;
 }
 
 .pos img{
-    width: 40%;
+    width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+    .sale-header{
+        flex-direction: row;
+    }
+
+    .sale-header-item{
+        width: 40%;
+    }
+
+    .sale-header-item2 p, .pos-item p:nth-child(2){
+        width: 70%;
+    }
+
+    .pos{
+        flex-direction: row;
+    }
+
+    .pos-item{
+        width: 50%;
+    }
+    
+    .pos img{
+        width: 40%;
+    }
+    
 }

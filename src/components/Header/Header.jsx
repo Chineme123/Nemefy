@@ -3,6 +3,7 @@ import { FaShopify } from 'react-icons/fa6'
 import { IoMdArrowDropup, IoMdArrowDropdown } from "react-icons/io";
 import './Header.css'
 import SolutionsMenu from './SolutionsMenu';
+import { CiMenuBurger } from 'react-icons/ci';
 
 function Header() {
     const [solutionDropDown, setSolutionDropDown] = useState(false)
@@ -26,7 +27,7 @@ function Header() {
         <div className='header'>
             <div className='header-logo'>
                 <FaShopify style={{fontSize: "2.5rem", color: "green"}}/>
-                <h1>Shopify</h1>
+                <h1>Nemefy</h1>
             </div>
             <div className='header-links'>
                 <span>
@@ -48,6 +49,7 @@ function Header() {
             <div className='start'>
                 <span>Log in</span>
                 <span>Start free trial</span>
+                <span className='mobile-menu'><CiMenuBurger style={{fontSize: "24px"}}/></span>
             </div>
         </div>
         {solutionDropDown && <SolutionsMenu />}

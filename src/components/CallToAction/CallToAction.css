@@ -1,7 +1,7 @@
 .action{
     display: flex;
     align-items: center;
-    width: 50%;
+    width: 100%;
     border-bottom: 1.5px solid;
     padding: 1rem 0;
     overflow-x: hidden;
@@ -49,5 +49,11 @@
     100%{
         transform: translateX(0);
         opacity: 1;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .action{
+        width: 50%;
     }
 }

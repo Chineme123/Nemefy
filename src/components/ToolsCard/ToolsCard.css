@@ -1,7 +1,9 @@
 .tool-card{
-    width:70%;
+    width:300px;
+    min-width: 300px;
     padding: 1rem;
     cursor: pointer;
+    margin-right: 2rem;
 }
 
 .tool-card:hover .tool-card-title p{
@@ -23,14 +25,14 @@
 
 .tool-card-title p{
     font-size: 30px;
-    color: rgba(30, 30, 30, 0.5);
+    color: rgba(30, 30, 30, 1);
     font-weight: 800;
     margin-left: 4rem;
 }
 
 .tool-card-desc p{
     font-size: 24px;
-    color: rgba(30, 30, 30, 0.5);
+    color: rgba(30, 30, 30, 1);
     font-weight: 500;
 }
 
@@ -63,4 +65,20 @@
     100%{
         transform: translateX(0);
     }
+}
+
+@media screen and (min-width: 1024px) {
+    .tool-card-title p{
+        color: rgba(30, 30, 30, 0.5);
+    }
+    
+    .tool-card-desc p{
+        color: rgba(30, 30, 30, 0.5);
+    }
+
+    .tool-card{
+        width: 500px;
+        margin-right: 0;
+    }
+    
 }
