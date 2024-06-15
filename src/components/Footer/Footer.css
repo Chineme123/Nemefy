@@ -136,4 +136,8 @@
     .footer{
         padding: 1rem 5rem;
     }
+
+    .language span{
+        margin-bottom: 0;
+    }
 }
