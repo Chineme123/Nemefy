@@ -20,9 +20,10 @@
 }
 
 .tools-header-item1 p{
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 400;
     margin-bottom: 0.5rem;
+    color: rgba(40, 67, 135, 0.7);
 }
 
 .tools-header-item1 h1{

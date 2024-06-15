@@ -9,9 +9,9 @@
 }
 
 .build-store-p{
-    font-size: 1.2rem;
+    font-size: 16px;
     color: rgba(40, 67, 135, 0.7);
-    font-weight: 700;
+    font-weight: 400;
     margin-bottom: 0.5rem;
 }
 
@@ -59,13 +59,13 @@
 
 .build-action-item p{
     font-weight: 400;
-    font-size: 21px;
+    font-size: 16px;
 }
 
 .build-action-item span{
     text-decoration: underline;
     color: #000;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     display: flex;
     align-items: center;

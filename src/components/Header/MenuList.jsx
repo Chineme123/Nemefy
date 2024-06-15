@@ -1,10 +1,8 @@
 import React, { useState } from 'react'
-import data from './list'
 import './Header.css'
 import { FaArrowRight } from 'react-icons/fa6';
 
-function MenuList({icon, title}) {
-    const list = data.list;
+function MenuList({icon, title, list}) {
 
     const [visible, setVisible] = useState(null);
 
@@ -26,9 +24,8 @@ function MenuList({icon, title}) {
         </div>
         <div className='title-list'>
             {list.map((x, index) => (
-                <div key={index} style={{display: "flex", flexDirection: "column", marginTop: "1rem"}}>
+                <div key={index} style={{display: "flex", flexDirection: "column", marginTop: "1.5rem"}}>
                     <span  
-                        style={{marginBottom: "0.5rem"}} 
                         onMouseEnter={() => handleHover(index)} 
                         onMouseLeave={handleMouseout}
                     >

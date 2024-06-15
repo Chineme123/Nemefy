@@ -3,6 +3,7 @@ import { FaShopify } from 'react-icons/fa6'
 import { IoMdArrowDropup, IoMdArrowDropdown } from "react-icons/io";
 import './Header.css'
 import SolutionsMenu from './SolutionsMenu';
+import ResourcesMenu from './ResourcesMenu';
 import { CiMenuBurger } from 'react-icons/ci';
 
 function Header() {
@@ -53,6 +54,7 @@ function Header() {
             </div>
         </div>
         {solutionDropDown && <SolutionsMenu />}
+        {resourcesDropDown && <ResourcesMenu />}
     </>
   )
 }
