@@ -1,11 +1,11 @@
 import React from 'react'
-import { FaShopify } from "react-icons/fa";
 import { TbWorld } from "react-icons/tb";
 import { IoMdArrowDropup } from "react-icons/io";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { FaFacebookF, FaXTwitter, FaInstagram, FaYoutube  } from "react-icons/fa6";
 import { IoLogoTiktok } from "react-icons/io5";
 import { FaLinkedinIn, FaPinterest } from "react-icons/fa";
+import C from '../../assets/c.png';
 import './Footer.css'
 
 function Footer() {
@@ -15,7 +15,7 @@ function Footer() {
     <div className='footer'>
       <div className='upper'>
         <div className='logo'>
-          <FaShopify style={{fontSize: "6rem"}}/>
+        <img src={C} alt="logo" style={{width:"6rem", height:"6rem"}}/>
         </div>
         <div className='links'>
           <div>

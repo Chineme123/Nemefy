@@ -1,8 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { FaShopify } from 'react-icons/fa';
 import { IoMdArrowDropup, IoMdArrowDropdown } from "react-icons/io";
 import { CiMenuBurger } from 'react-icons/ci';
 import { BiExit } from 'react-icons/bi';
+import C from '../../assets/c.png';
 import './Header.css';
 import SolutionsMenu from './SolutionsMenu';
 import ResourcesMenu from './ResourcesMenu';
@@ -39,7 +39,7 @@ function Header() {
         <>
             <div className='header' ref={headerRef}>
                 <div className='header-logo'>
-                    <FaShopify style={{ fontSize: "2.5rem", color: "green" }} />
+                    <img src={C} alt="logo" style={{width:"2rem"}}/>
                     <h1>Nemefy</h1>
                 </div>
                 <div className='header-links'>
