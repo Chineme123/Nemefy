@@ -64,7 +64,7 @@
 
 /*solutionmenu*/
 .solutionMenu{
-    position: fixed;
+    position: relative;
     width: 100%;
     color: white;
     background: black;
@@ -73,6 +73,7 @@
 
 .solutionMenu-divone, .resourceMenu-divone{
     display: flex;
+    flex-direction: column;
     align-items: flex-start;
     justify-content: space-evenly;
     padding: 0.5rem;
@@ -81,17 +82,18 @@
 .solutionMenu-divtwo{
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     padding: 2rem 4.5rem;
     background-color: rgba(30, 30, 30, 1);
 }
 
 .solutionMenu-divtwo div{
-   border-right: 2px solid;
+   border-right: 0;
    padding: 1rem; 
     display: flex;
     flex-direction: column;
-    margin-right: 2rem;
+    margin-right: 0;
 }
 
 .solutionMenu-divtwo div span:first-child{
@@ -109,12 +111,13 @@
 /* resourceMenu */
 
 .resourceMenu{
-    position: fixed;
+    position: relative;
     width: 100%;
     color: white;
     background: black;
     z-index: 2;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
@@ -124,11 +127,11 @@
 }
 
 .resourceMenu-divone{
-    width: 70%;
+    width: 100%;
 }
 
 .resourceMenu-divtwo{
-    width: 30%;
+    width: 100%;
     padding: 2rem 4.5rem;
     background-color: rgba(30, 30, 30, 1);
 }
@@ -195,18 +198,19 @@
 /* whatsnewmenu */
 
 .whatsnewMenu-divtwo{
-    position: fixed;
+    position: relative;
     color: white;
     z-index: 2;
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     padding: 1rem 2.5rem;
     background-color: rgba(0, 0, 0, 1);
 }
 
 .divtwo-item{
-    border-right: 2px solid;
+    border-right: 0;
     padding: 1rem; 
     display: flex;
     flex-direction: row;
@@ -263,5 +267,46 @@
 
     .start span:first-child{
         display: block;
+    }
+
+    .solutionMenu{
+        position: fixed;
+    }
+
+    .resourceMenu{
+        position: fixed;
+        display: flex;
+    }
+
+    .solutionMenu-divone, .resourceMenu-divone{
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        padding: 0.5rem;
+    }
+
+    .solutionMenu-divtwo{
+        flex-direction: row;
+    }
+
+    .solutionMenu-divtwo div{
+        margin-right: 2rem;
+    }
+
+    .resourceMenu-divone{
+        width: 70%;
+    }
+    
+    .resourceMenu-divtwo{
+        width: 30%;
+    }
+
+    .whatsnewMenu-divtwo{
+        position: fixed;
+       flex-direction: row;
+    }
+
+    .divtwo-item, .solutionMenu-divtwo div{
+        border-right: 2px solid;
     }
 }

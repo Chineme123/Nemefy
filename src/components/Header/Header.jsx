@@ -1,20 +1,26 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { FaShopify } from 'react-icons/fa';
 import { IoMdArrowDropup, IoMdArrowDropdown } from "react-icons/io";
+import { CiMenuBurger } from 'react-icons/ci';
+import { BiExit } from 'react-icons/bi';
 import './Header.css';
 import SolutionsMenu from './SolutionsMenu';
 import ResourcesMenu from './ResourcesMenu';
 import Whatsnew from './Whatsnew';
-import { CiMenuBurger } from 'react-icons/ci';
+import MobileHeader from './MobileHeader';
 
 function Header() {
     const [activeDropdown, setActiveDropdown] = useState(null);
+    const [mobileHeader, setMobileHeader] = useState(false);
+    const headerRef = useRef(null);
 
     const toggleDropdown = (dropdown) => {
         setActiveDropdown(activeDropdown === dropdown ? null : dropdown);
     };
 
-    const headerRef = useRef(null);
+    const toggleMenu = () => {
+        setMobileHeader(!mobileHeader);
+    }
 
     const handleClickOutside = (event) => {
         if (headerRef.current && !headerRef.current.contains(event.target)) {
@@ -62,9 +68,16 @@ function Header() {
                 <div className='start'>
                     <span>Log in</span>
                     <span>Start free trial</span>
-                    <span className='mobile-menu'><CiMenuBurger style={{ fontSize: "24px" }} /></span>
+                    <span className='mobile-menu'>
+                        {
+                            mobileHeader ? 
+                            <BiExit style={{ fontSize: "24px" }} onClick={toggleMenu}/>
+                            : <CiMenuBurger style={{ fontSize: "24px" }} onClick={toggleMenu}/> 
+                        }
+                    </span>
                 </div>
             </div>
+            {mobileHeader && <MobileHeader />}
             {activeDropdown === 'solutions' && <SolutionsMenu />}
             {activeDropdown === 'resources' && <ResourcesMenu />}
             {activeDropdown === 'whatsNew' && <Whatsnew />}
