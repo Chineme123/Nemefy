@@ -139,9 +139,13 @@
     padding: 0.5rem;
 }
 
-.resourceMenu .title-list{
+.resource-list{
     display: flex;
     flex-direction: column;
+}
+
+.resource-list span{
+    margin-top: 1rem;
 }
 
 /* menulist */
@@ -159,7 +163,7 @@
 
 .menulist .title span, .resourceMenu .title span{
     display: flex;
-    border: 1px solid;
+    border: 2px solid;
     width: 35px;
     height: 35px;
     border-radius: 50%;
@@ -187,6 +191,54 @@
     font-size: 14px;
     font-weight: 400;
 }
+
+/* whatsnewmenu */
+
+.whatsnewMenu-divtwo{
+    position: fixed;
+    color: white;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1rem 2.5rem;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.divtwo-item{
+    border-right: 2px solid;
+    padding: 1rem; 
+    display: flex;
+    flex-direction: row;
+    margin-right: 2rem;
+    align-items: center;
+    cursor: pointer;
+ }
+
+ .divtwo-item-text{
+    display: flex;
+    flex-direction: column;
+ }
+
+ .divtwo-item-text span:first-child{
+    font-size: 16px;
+    font-weight: 500;
+ }
+
+ .divtwo-item-text span:nth-child(2){
+    font-size: 14px;
+    color: rgba(200, 200, 200, 1);
+ }
+ .icon{
+    margin-right: 1rem;
+    border: 2px solid;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
 
 @media screen and (min-width: 1024px) {
     .header-links{

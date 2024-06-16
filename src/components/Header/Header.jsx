@@ -1,62 +1,75 @@
-import React, { useState } from 'react'
-import { FaShopify } from 'react-icons/fa6'
+import React, { useState, useRef, useEffect } from 'react';
+import { FaShopify } from 'react-icons/fa';
 import { IoMdArrowDropup, IoMdArrowDropdown } from "react-icons/io";
-import './Header.css'
+import './Header.css';
 import SolutionsMenu from './SolutionsMenu';
 import ResourcesMenu from './ResourcesMenu';
+import Whatsnew from './Whatsnew';
 import { CiMenuBurger } from 'react-icons/ci';
 
 function Header() {
-    const [solutionDropDown, setSolutionDropDown] = useState(false)
-    const [resourcesDropDown, setResourcesDropDown] = useState(false)
-    const [whatsNewDropDown, setWhatsNewDropDown] = useState(false)
+    const [activeDropdown, setActiveDropdown] = useState(null);
 
-    const toggleSolutionsDropdown = () => {
-        setSolutionDropDown(!solutionDropDown);
+    const toggleDropdown = (dropdown) => {
+        setActiveDropdown(activeDropdown === dropdown ? null : dropdown);
     };
 
-    const toggleResourcesDropdown = () => {
-        setResourcesDropDown(!resourcesDropDown);
+    const headerRef = useRef(null);
+
+    const handleClickOutside = (event) => {
+        if (headerRef.current && !headerRef.current.contains(event.target)) {
+            setActiveDropdown(null);
+        }
     };
 
-    const toggleWhatsNewDropdown = () => {
-        setWhatsNewDropDown(!whatsNewDropDown);
-    };
+    useEffect(() => {
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
 
-  return (
-    <>
-        <div className='header'>
-            <div className='header-logo'>
-                <FaShopify style={{fontSize: "2.5rem", color: "green"}}/>
-                <h1>Nemefy</h1>
+    return (
+        <>
+            <div className='header' ref={headerRef}>
+                <div className='header-logo'>
+                    <FaShopify style={{ fontSize: "2.5rem", color: "green" }} />
+                    <h1>Nemefy</h1>
+                </div>
+                <div className='header-links'>
+                    <span>
+                        Solutions
+                        {activeDropdown === 'solutions' 
+                            ? <IoMdArrowDropup onClick={() => toggleDropdown('solutions')} /> 
+                            : <IoMdArrowDropdown onClick={() => toggleDropdown('solutions')} />}
+                    </span>
+                    <span>
+                        Pricing
+                    </span>
+                    <span>
+                        Resources
+                        {activeDropdown === 'resources' 
+                            ? <IoMdArrowDropup onClick={() => toggleDropdown('resources')} /> 
+                            : <IoMdArrowDropdown onClick={() => toggleDropdown('resources')} />}
+                    </span>
+                    <span>
+                        What's new
+                        {activeDropdown === 'whatsNew' 
+                            ? <IoMdArrowDropup onClick={() => toggleDropdown('whatsNew')} /> 
+                            : <IoMdArrowDropdown onClick={() => toggleDropdown('whatsNew')} />}    
+                    </span>
+                </div>
+                <div className='start'>
+                    <span>Log in</span>
+                    <span>Start free trial</span>
+                    <span className='mobile-menu'><CiMenuBurger style={{ fontSize: "24px" }} /></span>
+                </div>
             </div>
-            <div className='header-links'>
-                <span>
-                    Solutions
-                    {solutionDropDown ? <IoMdArrowDropup onClick={toggleSolutionsDropdown} /> : <IoMdArrowDropdown onClick={toggleSolutionsDropdown} />}
-                </span>
-                <span>
-                    Pricing
-                </span>
-                <span>
-                    Resources
-                    {resourcesDropDown ? <IoMdArrowDropup onClick={toggleResourcesDropdown} /> : <IoMdArrowDropdown onClick={toggleResourcesDropdown} />}
-                </span>
-                <span>
-                    What's new
-                    {whatsNewDropDown ? <IoMdArrowDropup onClick={toggleWhatsNewDropdown} /> : <IoMdArrowDropdown onClick={toggleWhatsNewDropdown} />}    
-                </span>
-            </div>
-            <div className='start'>
-                <span>Log in</span>
-                <span>Start free trial</span>
-                <span className='mobile-menu'><CiMenuBurger style={{fontSize: "24px"}}/></span>
-            </div>
-        </div>
-        {solutionDropDown && <SolutionsMenu />}
-        {resourcesDropDown && <ResourcesMenu />}
-    </>
-  )
+            {activeDropdown === 'solutions' && <SolutionsMenu />}
+            {activeDropdown === 'resources' && <ResourcesMenu />}
+            {activeDropdown === 'whatsNew' && <Whatsnew />}
+        </>
+    );
 }
 
-export default Header
+export default Header;

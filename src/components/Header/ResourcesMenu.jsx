@@ -20,7 +20,7 @@ function ResourcesMenu() {
             <div className='title'>
                 <h5><span><BsBag /></span> Essential Tools</h5>
             </div>
-            <div className='title-list'>
+            <div className='resource-list'>
                 <span>Business Name Generator</span>
                 <span>Logo Maker</span>
                 <span>Stock Photography</span>
